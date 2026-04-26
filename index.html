@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashu Mishra — Senior Product Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">Ashu Mishra</span>
+      <ul class="nav-links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume" class="nav-cta">Download CV</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+    <ul class="nav-mobile" id="mobileMenu">
+      <li><a href="#story" class="mobile-link">Story</a></li>
+      <li><a href="#impact" class="mobile-link">Impact</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#resume" class="mobile-link">Download CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top">
+    <!-- Animated background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: Text -->
+      <div class="hero-text">
+        <p class="hero-eyebrow animate-slide-up" style="--delay:0.1s">Senior Product Manager · 7+ Years</p>
+        <h1 class="hero-headline animate-slide-up" style="--delay:0.25s">
+          Builder.<br />
+          Problem Solver.<br />
+          <span class="hero-accent typewriter" id="typewriter"></span>
+        </h1>
+        <p class="hero-sub animate-slide-up" style="--delay:0.45s">
+          From mechatronics engineer to fintech PM — Ashu Mishra has spent 7 years
+          turning complex business problems into scalable products that move millions of
+          dollars and make operations dramatically smarter.
+        </p>
+        <div class="hero-badges animate-slide-up" style="--delay:0.55s">
+          <span class="badge">🏦 Fintech</span>
+          <span class="badge">🚚 Supply Chain</span>
+          <span class="badge">🛒 B2B Marketplace</span>
+          <span class="badge">📊 Data-Driven</span>
+        </div>
+        <div class="hero-actions animate-slide-up" style="--delay:0.65s">
+          <a href="#story" class="btn btn-primary ripple">Read the Story</a>
+          <a href="Ashu_Mishra_Resume.pdf" download class="btn btn-secondary ripple">↓ Download Resume</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Photo -->
+      <div class="hero-photo-wrap animate-slide-left" style="--delay:0.3s">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-ring hero-photo-ring--2"></div>
+        <img
+          src="ashu-photo.jpg"
+          alt="Ashu Mishra — Senior Product Manager"
+          class="hero-photo"
+          onerror="this.parentElement.classList.add('no-photo')"
+        />
+        <!-- Floating chips around photo -->
+        <div class="photo-chip photo-chip--1">$130M Unlocked</div>
+        <div class="photo-chip photo-chip--2">99.5% Success</div>
+        <div class="photo-chip photo-chip--3">7+ Years</div>
+      </div>
+    </div>
+
+    <a href="#impact" class="hero-scroll-hint" aria-label="Scroll down">
+      <span class="scroll-arrow"></span>
+    </a>
+  </header>
+
+  <!-- ===================== STATS BAR ===================== -->
+  <section class="stats" id="impact">
+    <div class="stats-inner">
+      <div class="stat-item" data-target="130" data-suffix="M" data-prefix="$">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">M</span></span>
+        <span class="stat-label">Working Capital Unlocked</span>
+      </div>
+      <div class="stat-item" data-target="99.5" data-suffix="%" data-decimals="1">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">%</span></span>
+        <span class="stat-label">Payment Success Rate</span>
+      </div>
+      <div class="stat-item" data-target="1.1" data-suffix="M" data-decimals="1">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">M</span></span>
+        <span class="stat-label">SKUs on Catalog Platform</span>
+      </div>
+      <div class="stat-item" data-target="90" data-suffix="%">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">%</span></span>
+        <span class="stat-label">Manpower Reduction via Automation</span>
+      </div>
+      <div class="stat-item" data-target="400" data-suffix="Cr" data-prefix="₹">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">Cr</span></span>
+        <span class="stat-label">Monthly Invoices Managed</span>
+      </div>
+      <div class="stat-item" data-target="7" data-suffix="+">
+        <span class="stat-number"><span class="counter">0</span><span class="stat-unit">+</span></span>
+        <span class="stat-label">Years of Product Experience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORY TIMELINE ===================== -->
+  <section class="timeline-section" id="story">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal-up">The Journey</p>
+      <h2 class="section-title reveal-up">A Story of Building at Scale</h2>
+      <p class="section-sub reveal-up">
+        Every great product thinker has an origin story. Ashu's begins not in a product team,
+        but on a factory floor — and that foundation changed everything.
+      </p>
+
+      <div class="timeline">
+
+        <!-- Chapter 1 -->
+        <div class="timeline-item reveal-left" data-chapter="01">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2015 – 2017</span>
+            <h3 class="timeline-role">The Foundation</h3>
+            <p class="timeline-company">Procurement Engineer · Eon Electric Limited, Delhi</p>
+            <p class="timeline-story">
+              Before product, there was process. As a Mechatronics engineer, Ashu learned the unglamorous
+              but essential craft of making supply chains work — coordinating between Sales, R&D, QA, and
+              Finance to source components that keep the lights on. Literally.
+            </p>
+            <p class="timeline-story">
+              This wasn't just a job. It was a masterclass in understanding how organisations actually
+              function from the inside — the kind of ground-level empathy that most PMs never develop.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="timeline-item reveal-right" data-chapter="02">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2018 – 2020</span>
+            <h3 class="timeline-role">The Pivot</h3>
+            <p class="timeline-company">PGDM (Marketing) · IMT Ghaziabad</p>
+            <p class="timeline-story">
+              A deliberate choice: combine technical depth with business strategy. At IMT Ghaziabad,
+              Ashu connected the dots between engineering precision and market thinking. The question
+              he kept asking: <em>"What if we could build systems that solve problems at scale?"</em>
+            </p>
+            <p class="timeline-story">
+              The answer led him to product management.
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="timeline-item reveal-left" data-chapter="03">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">Mar 2020 – Apr 2022</span>
+            <h3 class="timeline-role">The First Build</h3>
+            <p class="timeline-company">Product Manager · ElasticRun, Pune</p>
+            <p class="timeline-story">
+              First PM role. Immediately thrown into the deep end of B2B logistics. Ashu didn't just
+              learn the craft — he applied it to problems that mattered: managing ₹200Cr/month in revenue,
+              automating the sales app to cut manpower needs by 90%, and building data dashboards
+              that gave leadership real-time operational clarity.
+            </p>
+            <div class="timeline-wins">
+              <span class="win-tag">₹200Cr/month revenue managed</span>
+              <span class="win-tag">90% manpower reduction</span>
+              <span class="win-tag">5% monthly EBITDA growth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="timeline-item reveal-right" data-chapter="04">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">Apr 2022 – Dec 2023</span>
+            <h3 class="timeline-role">The Scale-Up</h3>
+            <p class="timeline-company">Senior Product Manager · ElasticRun, Pune</p>
+            <p class="timeline-story">
+              Promoted. Now leading a team. Ashu built the P&L Ecosystem from scratch — establishing
+              KPIs across 20+ warehouses and driving profitability metrics that earned his team the
+              company's <strong>"Team of the Year"</strong> award.
+            </p>
+            <p class="timeline-story">
+              He also shipped products that changed user behaviour: SMART Recommender, SMART Basket,
+              and a Medal Framework for sales gamification — lifting margins from 4.5% to 7.5% and
+              growing items per invoice from 7 to 12.
+            </p>
+            <div class="timeline-wins">
+              <span class="win-tag">🏆 Team of the Year</span>
+              <span class="win-tag">Margin: 4.5% → 7.5%</span>
+              <span class="win-tag">₹40Cr working capital unlocked</span>
+              <span class="win-tag">₹2Cr/month logistics savings</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 5 — Current, highlighted -->
+        <div class="timeline-item reveal-left" data-chapter="05">
+          <div class="timeline-dot timeline-dot--active">
+            <span class="dot-pulse"></span>
+          </div>
+          <div class="timeline-content timeline-content--active">
+            <span class="timeline-period">Jan 2024 – Present <span class="live-badge">● Live</span></span>
+            <h3 class="timeline-role">The Builder</h3>
+            <p class="timeline-company">Senior Product Manager · Medikabazaar, Gurgaon</p>
+            <p class="timeline-story">
+              Ashu didn't join to maintain — he joined to build. From scratch, he established
+              Medikabazaar's entire fintech vertical: integrating 100+ banks, 5 payment gateways,
+              and an open-router orchestration system that now handles ₹300–400Cr in invoices monthly
+              at a 99.5% payment success rate.
+            </p>
+            <p class="timeline-story">
+              But the headline achievement? An end-to-end procurement platform that unlocked
+              <strong>USD 130M of working capital</strong> through intelligent inventory orchestration.
+              Not a tweak. Not an iteration. A platform built from zero.
+            </p>
+            <p class="timeline-story">
+              He also shipped a React Native field sales app (₹200Cr/month in sales), a 1.1M SKU
+              catalog platform with semantic search, and a machine-learning sales enrollment system
+              managing ₹350Cr of monthly orders.
+            </p>
+            <div class="timeline-wins">
+              <span class="win-tag win-tag--gold">$130M Working Capital</span>
+              <span class="win-tag win-tag--gold">99.5% Payment Success</span>
+              <span class="win-tag win-tag--gold">1.1M SKU Platform</span>
+              <span class="win-tag win-tag--gold">100+ Bank Integrations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills-section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal-up">What He Brings</p>
+      <h2 class="section-title reveal-up">Skills & Expertise</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" style="--card-delay: 0s">
+          <div class="skill-icon">⚙️</div>
+          <h3 class="skill-card-title">Technical</h3>
+          <ul class="skill-list">
+            <li>SQL & Python (Analytics)</li>
+            <li>Figma (Prototyping)</li>
+            <li>Jira (Agile Planning)</li>
+            <li>Power BI & Tableau</li>
+            <li>Data Analytics & Dashboards</li>
+            <li>MS Excel (Advanced)</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal-up" style="--card-delay: 0.1s">
+          <div class="skill-icon">🗺️</div>
+          <h3 class="skill-card-title">Product Management</h3>
+          <ul class="skill-list">
+            <li>Product Roadmap & Lifecycle</li>
+            <li>Customer & User Research</li>
+            <li>Data-Driven Decision Making</li>
+            <li>Go-to-Market Strategy</li>
+            <li>A/B Testing</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal-up" style="--card-delay: 0.2s">
+          <div class="skill-icon">🚀</div>
+          <h3 class="skill-card-title">Leadership & Business</h3>
+          <ul class="skill-list">
+            <li>Cross-functional Team Leadership</li>
+            <li>Stakeholder Management</li>
+            <li>Revenue & OKR Ownership</li>
+            <li>Fintech & Payment Systems</li>
+            <li>Supply Chain Optimisation</li>
+            <li>Digital Transformation</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal-up" style="--card-delay: 0.3s">
+          <div class="skill-icon">🏭</div>
+          <h3 class="skill-card-title">Domain Expertise</h3>
+          <ul class="skill-list">
+            <li>B2B Marketplace Products</li>
+            <li>Fintech & Payments</li>
+            <li>Logistics & Supply Chain</li>
+            <li>Healthcare Commerce</li>
+            <li>Sales Enablement Tools</li>
+            <li>Procurement Platforms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME CTA ===================== -->
+  <section class="resume-cta" id="resume">
+    <div class="cta-glow"></div>
+    <div class="section-inner resume-cta-inner">
+      <h2 class="resume-cta-title reveal-up">Ready to see the full picture?</h2>
+      <p class="resume-cta-sub reveal-up">
+        Download Ashu's resume for a complete view of his experience, or connect directly.
+      </p>
+      <div class="resume-cta-actions reveal-up">
+        <a href="Ashu_Mishra_Resume.pdf" download class="btn btn-primary btn-large ripple">
+          ↓ &nbsp;Download Resume (PDF)
+        </a>
+        <a href="https://linkedin.com/in/ashu-mishra-2b594683/" target="_blank" rel="noopener" class="btn btn-outline btn-large ripple">
+          View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Ashu Mishra</p>
+      <p class="footer-role">Senior Product Manager · B2B · Fintech · Supply Chain</p>
+      <div class="footer-links">
+        <a href="mailto:ashumishra1@outlook.com">ashumishra1@outlook.com</a>
+        <span class="footer-sep">·</span>
+        <a href="https://linkedin.com/in/ashu-mishra-2b594683/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="footer-sep">·</span>
+        <a href="tel:+918882644660">+91 88826 44660</a>
+      </div>
+      <p class="footer-copy">Built to tell a story, not just list a career.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
